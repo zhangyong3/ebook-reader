@@ -1,0 +1,30 @@
+:root { color-scheme: light; }
+body { font:15px/1.75 -apple-system, 'PingFang SC', sans-serif; margin:16px; overflow-wrap:anywhere; }
+img { max-width:100%; height:auto; }
+a { color:#426653; }
+table { max-width:100%; }
+
+/* Dictionary HTML often supplies colors intended for a white page. Keep its type,
+   layout and images, but give every text run a predictable dark surface and ink. */
+html[data-leaf-theme="dark"], html[data-leaf-theme="dark"] body#leaf-dictionary {
+    color-scheme:dark !important;
+    background:#202320 !important;
+    color:#e1e5dd !important;
+}
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary *,
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary *::before,
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary *::after {
+    color:#e1e5dd !important;
+    -webkit-text-fill-color:currentColor !important;
+    background-color:transparent !important;
+    text-shadow:none !important;
+    opacity:1 !important;
+}
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary a,
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary a *,
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary a::before,
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary a::after {
+    color:#a7dcc0 !important;
+}
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary a { text-decoration:underline; }
+html[data-leaf-theme="dark"] body#leaf-dictionary#leaf-dictionary ::selection { background:#426653 !important; color:#ffffff !important; }
